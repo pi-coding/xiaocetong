@@ -1,0 +1,92 @@
+@use './variables.scss' as *;
+
+:root {
+  --el-color-primary: #{$cct-primary};
+  --el-color-primary-light-3: #3bbbba;
+  --el-color-primary-light-5: #6dcfce;
+  --el-color-primary-light-7: #a4e1e0;
+  --el-color-primary-light-8: #c2eceb;
+  --el-color-primary-light-9: #e6f7f7;
+  --el-color-primary-dark-2: #{$cct-primary-dark};
+  --el-border-radius-base: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif;
+  background: $cct-bg;
+  color: $cct-text;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $cct-primary;
+  text-decoration: none;
+}
+
+.page-card {
+  background: #fff;
+  border-radius: $cct-radius;
+  box-shadow: $cct-shadow;
+  padding: 16px;
+}
+
+.page-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+
+.page-subtitle {
+  font-size: 13px;
+  color: $cct-text-light;
+  margin: 0 0 16px;
+}
+
+.muted {
+  color: $cct-text-light;
+  font-size: 13px;
+}
+
+.text-primary {
+  color: $cct-primary;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cddadd;
+  border-radius: 3px;
+}
+
+.el-button--primary {
+  --el-button-bg-color: #{$cct-primary};
+  --el-button-border-color: #{$cct-primary};
+  --el-button-hover-bg-color: #{$cct-primary-dark};
+  --el-button-hover-border-color: #{$cct-primary-dark};
+}
